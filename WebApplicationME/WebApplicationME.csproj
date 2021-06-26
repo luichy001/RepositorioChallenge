@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection.Libraries" Version="1.0.0" />
+    <PackageReference Include="SimpleInjector" Version="5.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Backend.Me.Appservice.Interface\Backend.Me.Appservice.Interface.csproj" />
+    <ProjectReference Include="..\Backend.Me.Appservice\Backend.Me.Appservice.csproj" />
+    <ProjectReference Include="..\Backend.Me.Contracts\Backend.Me.Contracts.csproj" />
+    <ProjectReference Include="..\Backend.Me.Infra.Data\Backend.Me.Infra.Data.csproj" />
+  </ItemGroup>
+
+
+</Project>
